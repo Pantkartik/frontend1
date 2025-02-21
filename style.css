@@ -1,0 +1,651 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:slategray;
+    color: white;
+    text-align: left;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(144, 56, 41);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+   
+
+}
+
+.logo {
+    width: 100px;
+    margin-right: 1000px;
+    image-rendering: optimizeQuality;
+}
+.backimage{
+    height: 100px;
+    margin-left: 50px;
+    
+}
+/* Stylish Font with Scrolling Animation */
+.navbar h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #8f7e29, #a78087, #ff7eb3);
+    -webkit-background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollText 5s linear infinite;
+}
+
+
+/* Header with Blended Image */
+header {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://image-static.collegedunia.com/public/reviewPhotos/544907/IMG_0731.jpeg?mode=cover') no-repeat center center/cover;
+    background-blend-mode: overlay;
+    background-color:rgb(180, 173, 173);
+    font-style:italic ;
+    font-feature-settings: "akhn";
+     color:rgb(201, 103, 50) ;
+}
+
+/* Letter-by-Letter Animation */
+@keyframes typeEffect {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.guide h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    border-right: 2px solid #ff9800;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typeEffect 3s steps(30, end) forwards;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.guide-btn {
+    padding: 12px 20px;
+    border: white;
+    background: greenyellow;
+    color:black;
+    font-size: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.7s ease, background 0.9s;
+    font-family: monospace;
+    text-shadow: #ff9800;
+}
+
+.guide-btn:hover {
+    transform: scale(.8);
+    background:cornsilk;
+}
+/* section {
+    padding: 20px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 200px;
+    color: greenyellow;
+  } */
+   /* Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Tables Styling */
+.table-container {
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: greenyellow;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #ddd;
+}
+/* Contact Me Section */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color:yellow;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: rgba(221, 209, 209, 0.2);
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(188, 79, 79);
+    font-size: 1.2rem;
+    font-weight:normal;
+    transition: all 0.4s ease-in-out;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+/* Contact Me Section with Sophisticated Animation */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animated Contact Heading */
+.contact-heading {
+    font-size: 2.8rem;
+    color: #684612;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    animation: slideIn 2s ease-in-out;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Contact Items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* roadmap 111 */
+.roadmap {
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.roadmap h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.roadmap-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.roadmap-step {
+    display: flex;
+    align-items: center;
+    background: #252525;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 60%;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.roadmap-step:hover {
+    background: #333;
+}
+
+.roadmap-step input {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.roadmap-step input:checked {
+    background: #4caf50;
+    border-color: #4caf50;
+}
+
+.roadmap-step input:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    left: 15px;
+    top: 6px;
+}
+/* roadmap other */
+.roadmap {
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.roadmap h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.roadmap-box {
+    margin-bottom: 15px;
+}
+
+.toggle-btn {
+    background: #4caf50;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background: #45a049;
+}
+
+.roadmap-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #252525;
+    border-radius: 8px;
+}
+
+.roadmap-step {
+    display: flex;
+    align-items: center;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 60%;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+
+.roadmap-step:hover {
+    background: #444;
+}
+
+.roadmap-step input {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.roadmap-step input:checked {
+    background: #4caf50;
+    border-color: #4caf50;
+}
+
+.roadmap-step input:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    left: 15px;
+    top: 6px;
+}
+/* other */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    color: white;
+}
+
+.roadmap-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.roadmap {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.roadmap.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #00ff00;
+    text-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #00ff00, #00ccff);
+    transition: width 0.5s ease-in-out;
+}
+/* faang */
+/* Center the Interview Section */
+.interview-section {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.dropdown-btn {
+    background: linear-gradient(135deg, #ff4c4c, #ff914d);
+    color: white;
+    padding: 14px 28px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 76, 76, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+}
+
+.dropdown-btn:hover {
+    background: linear-gradient(135deg, #ff2c2c, #ff6a3d);
+    box-shadow: 0 6px 12px rgba(255, 76, 76, 0.5);
+    transform: scale(1.05);
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeInScale 0.3s ease-in-out;
+    z-index: 9;
+}
+
+
+.dropdown-content.active {
+    display: block;
+}
+
+/* Dropdown Buttons */
+.dropdown-content button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.dropdown-content button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transform: scale(1.05);
+}
+
+/* Pop-up for Roadmap */
+.roadmap-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Close Button */
+.close-popup {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-popup:hover {
+    background: darkred;
+}
+
+/* Animations */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
